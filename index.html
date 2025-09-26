@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historias de Gatitos y Perritos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🐾 Generador de Historias e Imágenes</h1>
+
+      <div class="buttons">
+        <button id="generarHistoriaBtn">Generar historia</button>
+
+        <select id="estiloSelect" disabled>
+          <option value="realista">Realista</option>
+          <option value="acuarela">Acuarela</option>
+          <option value="caricatura">Caricatura</option>
+          <option value="anime">Anime</option>
+        </select>
+
+        <button id="generarImagenBtn" disabled>Generar imagen</button>
+      </div>
+
+      <div id="loader" class="loader">
+        ⏳ Cargando información, espere por favor...
+      </div>
+
+      <h2>📖 Historia generada:</h2>
+      <p id="historia-span"></p>
+
+      <h2>🖼️ Imagen generada:</h2>
+      <img
+        id="imagen-generada"
+        alt="Imagen generada por IA"
+        style="display: none"
+      />
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
